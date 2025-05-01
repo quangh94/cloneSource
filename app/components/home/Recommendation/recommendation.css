@@ -1,0 +1,121 @@
+.case-list {
+  width: 1037px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.case-list .case {
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  clear: both;
+}
+.case-list .case .image {
+  display: inline-block;
+  width: 238px;
+  position: relative;
+}
+.case-list .case .image .icon {
+  position: absolute;
+  top: -23px;
+  left: -21px;
+}
+.case-list .case .detail {
+  width: calc(100% - 238px - 36px);
+  float: right;
+}
+.case-list .case .detail .caption {
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+.case-list .case .detail .caption::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 4px;
+  margin-top: 8px;
+  background: #fff;
+  background-image: radial-gradient(circle farthest-side, #01a1dd 50%, transparent 50%, transparent 100%);
+  background-size: 4px 4px;
+  background-position: 0 0;
+}
+.case-list .case .detail .message {
+  margin-bottom: 30px;
+}
+.case-list .case .detail .solution .lead-arrow {
+  display: inline-block;
+  width: 145px;
+  height: 50px;
+  background: #ef9a54;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 12px;
+  margin-right: 30px;
+  position: relative;
+  line-height: 50px;
+  vertical-align: middle;
+}
+.case-list .case .detail .solution .lead-arrow::after {
+  position: absolute;
+  top: 0;
+  right: -30px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 15px solid #ef9a54;
+}
+.case-list .case .detail .solution .conclusion {
+  display: inline-block;
+  color: #f36d00;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  vertical-align: middle;
+}
+.choose-us {
+  display: grid;
+  justify-content: center;
+}
+.choose-us strong {
+  font-size: 42px;
+  text-align: center;
+}
+.choose-us strong mark {
+  color: #00aa9e;
+  background-color: unset;
+}
+.choose-us-wrapper {
+  display: grid;
+  gap: 40px;
+  justify-items: center;
+  padding-bottom: 40px;
+}
+.choose-us-wrapper figure {
+  max-width: var(--max-width-item);
+}
+@media screen and (max-width: 768px) {
+  .case-list {
+    width: calc(100% - 40px);
+  }
+  .case-list .case {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .case-list .case .detail {
+    width: 100%;
+  }
+  .case-list .case .detail .caption {
+    line-height: 1.5;
+  }
+}

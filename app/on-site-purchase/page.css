@@ -1,0 +1,76 @@
+.boxTitleMain.boxTitle {
+  background: #12a646;
+  padding: 10px 0 12px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.boxTitleMain .titleJp {
+  font-size: 25px;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  margin-bottom: -1px;
+}
+.areas {
+  max-width: 720px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+.area {
+  width: 100%;
+}
+.area .clear {
+  clear: both;
+}
+.area h3 {
+  color: #fff;
+  font-size: 18px;
+  text-align: left;
+  background: #58b530;
+  margin: 30px 0 20px;
+  padding: 15px;
+  border: 0;
+}
+.area ul {
+  padding: 0.5em;
+  list-style-type: none;
+  margin: 1em 0;
+}
+.area li {
+  position: relative;
+  padding-left: 20px;
+  float: left;
+  font-size: 16px;
+  margin: 0;
+}
+.area li:before {
+  position: absolute;
+  content: "";
+  top: 0.5em;
+  left: 0.2em;
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 8px;
+  border-color: transparent transparent transparent #62b547;
+}
+.area a {
+  color: #1967d2;
+}
+.area ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .area {
+    padding: 0 20px;
+  }
+  .area ul {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}

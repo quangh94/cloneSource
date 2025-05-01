@@ -1,0 +1,13 @@
+footer {
+  position: sticky;
+  bottom: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 998;
+}
+.footer_contents_wrapper {
+  display: flex;
+  background-color: #f8f9fa;
+  padding-top: 5px;
+}

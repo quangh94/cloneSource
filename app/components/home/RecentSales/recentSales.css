@@ -1,0 +1,122 @@
+.casestudy-list {
+  width: 1100px;
+  margin: auto;
+}
+
+.casestudy-list .casestudy {
+  margin: 0 10px;
+}
+
+.casestudy-list .casestudy .head {
+  height: 178px;
+  position: relative;
+}
+
+.casestudy-list .casestudy .head .image {
+  width: 100%;
+  height: 178px;
+  display: flex;
+  overflow: hidden;
+}
+
+.casestudy-list .casestudy .head .image a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.casestudy-list .casestudy .head .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.casestudy-list .casestudy .head .shop-info {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.casestudy-list .casestudy .head .shop-info .shop-name {
+  display: inline-block;
+  background: #01a1dd;
+  color: #fff;
+  padding: 5px 18px;
+  margin-bottom: 6px;
+  line-height: 1;
+  font-size: 12px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.casestudy-list .casestudy .bottom {
+  padding: 6px 0 0 0;
+  overflow: hidden;
+}
+
+.casestudy-list .casestudy .bottom .title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  height: 3.8em;
+  overflow: hidden;
+  border-left: none;
+  padding: 0;
+  border-bottom: none;
+}
+
+.casestudy-list .casestudy .bottom .review-content .element {
+  line-height: 24px;
+  overflow: hidden;
+}
+
+.casestudy-list .casestudy .bottom .review-content .element .label {
+  width: 108px;
+  font-size: 12px;
+  font-weight: 700;
+  float: left;
+}
+
+.casestudy-list .casestudy .bottom .review-content .element .content {
+  width: 100%;
+  font-size: 12px;
+  float: right;
+}
+
+.casestudy-list .casestudy .bottom .review-content .element .price-label {
+  color: #01a1dd;
+  font-size: 12px;
+  margin-right: 6px;
+  font-weight: 400;
+}
+
+.casestudy-list .casestudy .bottom .review-content .element .price {
+  color: #e43000;
+  font-size: 22px;
+  font-weight: 700;
+  display: block;
+}
+
+.casestudy-list .casestudy .bottom .review-content .element .price .unit {
+  font-size: 12px;
+}
+
+.casestudy-list .casestudy .bottom .review-content .element .voice {
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  .casestudy-list {
+    width: 100%;
+  }
+  .casestudy-list .casestudy {
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-sizing: content-box;
+    min-width: 180px;
+  }
+}
