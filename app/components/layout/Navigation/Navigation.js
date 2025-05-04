@@ -90,16 +90,10 @@ export const Navigation = () => {
                   </Link>
                   <ul className="drop-menu">
                     <li>
-                      <a href="#">{el.text} 1</a>
+                      <a href="#">不用品回収</a>
                     </li>
                     <li>
-                      <a href="#">{el.text} 2</a>
-                    </li>
-                    <li>
-                      <a href="#">{el.text} 3</a>
-                    </li>
-                    <li>
-                      <a href="#">{el.text} 4</a>
+                      <a href="#">買取強化</a>
                     </li>
                   </ul>
                 </li>

@@ -150,12 +150,12 @@ nav .wrapper {
   transition: all 0.3s ease;
 }
 .nav-links li a:hover {
-  background: #cfffaa;
+  background: #54af13;
   color: #000;
 }
 .nav-links .drop-menu {
   position: absolute;
-  background: #cfffaa;
+  background: #136aaf;
   width: 180px;
   line-height: 45px;
   top: 85px;
@@ -175,12 +175,12 @@ nav .wrapper {
   padding: 0 0 0 15px;
   font-weight: 400;
   border-radius: 0px;
-  color: #000;
+  color: #fff;
 }
 
 nav {
   height: 65px;
-  background: #59d15c;
+  background: #136aaf;
 }
 
 @media screen and (max-width: 768px) {
