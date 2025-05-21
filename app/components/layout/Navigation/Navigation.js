@@ -4,7 +4,13 @@ import "./navigation.css";
 
 const menus = [
   { text: "はじめての方の買取の流れ", url: "/" },
-  { text: "サービス" },
+  {
+    text: "サービス",
+    child: [
+      { text: "不用品回収", url: "#" },
+      { text: "買取強化", url: "#" },
+    ],
+  },
   { text: "買取実績" },
   { text: "出張買取 対応エリア", url: "on-site-purchase" },
   { text: "アシストコラム", url: "blogs" },
@@ -32,11 +38,24 @@ export const Navigation = () => {
               />
             </a>
             {menus.map((el, index) => (
-              <li key={index}>
-                <Link href={el.url ? `/${el.url}` : "#"} style={{ transition: `all 275ms ${175 + index * 50}ms` }}>
-                  {el.text}
-                </Link>
-              </li>
+              <>
+                {el.child?.length > 0 ? (
+                  <>
+                    <li className={"has-child"}>{el.text}</li>
+                    {el.child.map((child, idx) => (
+                      <li key={idx} className="child-menu">
+                        <a href={child.url}>{child.text}</a>
+                      </li>
+                    ))}
+                  </>
+                ) : (
+                  <li key={index}>
+                    <Link href={el.url ? `/${el.url}` : "#"} style={{ transition: `all 275ms ${175 + index * 50}ms` }}>
+                      {el.text}
+                    </Link>
+                  </li>
+                )}
+              </>
             ))}
             <li className="li-contact">
               <div className="nav-buttons">
@@ -81,32 +100,22 @@ export const Navigation = () => {
     <nav>
       <div className="wrapper">
         <ul className="nav-links">
-          {menus.map((el, index) => {
-            if (el.text === "サービス") {
-              return (
-                <li key={index}>
-                  <Link href={el.url ? `/${el.url}` : "#"} className="desktop-item">
-                    {el.text}
-                  </Link>
-                  <ul className="drop-menu">
-                    <li>
-                      <a href="#">不用品回収</a>
+          {menus.map((el, index) => (
+            <li key={index}>
+              <Link href={el.url ? `/${el.url}` : "#"} className="desktop-item">
+                {el.text}
+              </Link>
+              {el.child && (
+                <ul className="drop-menu">
+                  {el.child.map((child, idx) => (
+                    <li key={idx}>
+                      <a href={child.url}>{child.text}</a>
                     </li>
-                    <li>
-                      <a href="#">買取強化</a>
-                    </li>
-                  </ul>
-                </li>
-              );
-            }
-            return (
-              <li key={index}>
-                <Link href={el.url ? `/${el.url}` : "#"} className="desktop-item">
-                  {el.text}
-                </Link>
-              </li>
-            );
-          })}
+                  ))}
+                </ul>
+              )}
+            </li>
+          ))}
         </ul>
       </div>
     </nav>

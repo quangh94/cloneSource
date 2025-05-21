@@ -100,7 +100,173 @@
 .choose-us-wrapper figure {
   max-width: var(--max-width-item);
 }
+
+.boxFaqSingle .boxTitle .titleJp {
+  color: #08f;
+}
+
+.boxFaqSingle .boxTitle .titleEn {
+  color: #08f;
+}
+
+.boxFaqSingle .boxTitle .titleJp .bigFont {
+  font-size: 40px;
+}
+
+.boxFaqSingle .listQa {
+  margin: 0 0 23px;
+}
+
+.boxFaqSingle .listQa li {
+  margin-bottom: 20px;
+  background: #f29422;
+  border-radius: 5px;
+}
+
+.boxFaqSingle .listQa li:last-child {
+  margin-bottom: 0;
+}
+
+.boxFaqSingle .listQa li .titleQuestion {
+  position: relative;
+  font-size: 25px;
+  background: #f29422;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+  padding: 11px 104px;
+  cursor: pointer;
+}
+
+.boxFaqSingle .listQa li .titleQuestion::before {
+  position: absolute;
+  content: "Q";
+  font-size: 35px;
+  left: 38px;
+  top: 1px;
+}
+
+.boxFaqSingle .listQa li .titleQuestion:after {
+  content: "";
+  position: absolute;
+  right: 29px;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  border-left: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  transform: translateY(-50%) rotate(-45deg); /* Mũi tên xuống */
+  transition: transform 0.3s;
+}
+
+.faq-toggle:checked + label .titleQuestion:after {
+  transform: translateY(-50%) rotate(135deg);
+}
+
+.boxFaqSingle .listQa li .titleQuestion.active:after {
+  transform: translateY(-50%) rotate(0deg);
+}
+
+.boxFaqSingle .listQa li.show .titleQuestion:after {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.boxFaqSingle .listQa .boxAnswer {
+  background-color: #fff;
+  border: 2px solid #f29422;
+  margin-top: -1px;
+}
+
+.boxFaqSingle .listQa .boxAnswer .titleAnswer {
+  position: relative;
+  color: #f29422;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: -0.1px;
+  margin-bottom: 14px;
+}
+
+.boxFaqSingle .listQa .boxAnswer .faq-link {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.boxFaqSingle .listQa .boxAnswer .faq-link a {
+  display: block;
+  border: 3px solid #ff8000;
+  border-radius: 50px;
+  width: 100%;
+  width: max-content;
+  max-width: 175px;
+  text-align: center;
+  padding: 2px 8px 3px;
+  color: #ff8000;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: 0.2s;
+  text-decoration: none !important;
+}
+
+.boxFaqSingle .listQa .boxAnswer .faq-link a:hover {
+  transition: 0.2s;
+  background-color: #ff8000;
+  color: #fff;
+}
+
+.boxFaqSingle .listQa .boxAnswer .titleAnswer::before {
+  position: absolute;
+  content: "A";
+  font-size: 25px;
+  left: -41px;
+  top: -1px;
+}
+
+.boxFaqSingle .listQa .boxAnswer .titleAnswer .answerIcon {
+  margin-right: 25px;
+}
+
+.boxFaqSingle .listQa .boxAnswer .textAnswer {
+  font-size: 20px;
+  padding-left: 8px;
+  letter-spacing: 1px;
+}
+
+.boxFaqSingle .listQa .boxAnswer .textAnswer a {
+  color: #1e73be;
+  text-decoration: underline;
+}
+
+.boxFaqSingle .btnWork a {
+  background: #229ff2;
+  box-shadow: #08f 0 7px 0;
+}
+
+.boxFaqSingle .btnWork a:hover {
+  box-shadow: #08f 0 2px 0;
+  transform: translateY(5px);
+}
+
+.faq-toggle ~ .boxAnswer {
+  max-height: 0;
+  overflow: hidden;
+  height: 100%;
+  padding: 0px 0px 0px 0px;
+  opacity: 0;
+  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-toggle:checked ~ .boxAnswer {
+  opacity: 1;
+  max-height: 500px;
+  padding: 18px 82px 30px;
+}
+
 @media screen and (max-width: 768px) {
+  .faq-toggle:checked ~ .boxAnswer {
+    padding: 18px 60px;
+  }
   .case-list {
     width: calc(100% - 40px);
   }
@@ -117,5 +283,80 @@
   }
   .case-list .case .detail .caption {
     line-height: 1.5;
+  }
+
+  .boxFaqSingle .boxTitle .titleJp .bigFont {
+    font-size: 26px;
+  }
+
+  .boxFaqSingle .listQa li {
+    margin-bottom: 8px;
+  }
+
+  .boxFaqSingle .listQa li .titleQuestion::before {
+    font-size: 20px;
+    line-height: 1;
+    left: 10px;
+    top: 10px;
+  }
+
+  .boxFaqSingle .listQa li .titleQuestion {
+    font-size: 16px;
+    padding: 10px 34px 10px;
+    text-align: left;
+  }
+
+  .boxFaqSingle .listQa li .titleQuestion::after {
+    width: 10px;
+    height: 10px;
+    right: 15px;
+    top: 50%;
+    background-size: 100% 100%;
+  }
+
+  .boxFaqSingle .listQa li.show .titleQuestion::after {
+    top: 45%;
+  }
+
+  .boxFaqSingle .listQa .boxAnswer .textAnswer {
+    font-size: 14px;
+    padding-left: 0;
+    letter-spacing: 0;
+  }
+
+  .boxFaqSingle .listQa .boxAnswer .titleAnswer {
+    font-size: 14px;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    letter-spacing: -0.5px;
+  }
+
+  .boxFaqSingle .listQa .boxAnswer .titleAnswer::before {
+    font-size: 20px;
+    top: -3px;
+    left: -21px;
+  }
+
+  .boxFaqSingle .btnWork {
+    margin-top: -4px;
+  }
+
+  .areaReview {
+    margin-top: 40px;
+    padding: 30px 0 19px;
+  }
+
+  .areaReview .boxTitle .titleJp .jpTitle:after {
+    width: 14vw;
+    height: 14vw;
+    right: -15vw;
+    top: -100%;
+    max-width: 41px;
+    max-height: 41px;
+  }
+
+  .boxTitle .titleJp .bigFont {
+    display: block;
+    text-decoration-thickness: 8px;
   }
 }

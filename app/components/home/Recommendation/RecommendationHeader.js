@@ -3,7 +3,7 @@ export const RecommendationHeader = () => {
     <h2 className="subtitle">
       家電や家具の売却は
       <br />
-      <span className="yellow">出張買取</span>がおすすめです
+      <span className="yellow">選ばれる理由</span>がおすすめです
     </h2>
   );
 };
