@@ -12,12 +12,10 @@
   margin-bottom: -1px;
 }
 .areas {
-  max-width: 720px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: auto;
 }
 .area {
   width: 100%;

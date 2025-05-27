@@ -1,7 +1,6 @@
 import { ServiceAreaHeader } from "./ServiceAreaHeader";
 import { ServiceAreaOutline } from "./ServiceAreaOutline";
 import { ServiceAreaList } from "./ServiceAreaList";
-import "./serviceArea.css";
 
 export const ServiceArea = () => {
   return (

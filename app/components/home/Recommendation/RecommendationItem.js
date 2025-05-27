@@ -4,22 +4,8 @@ export const RecommendationItem = ({ caseItem }) => {
   return (
     <div className="case">
       <div className="image">
-        <img
-          className="pc"
-          src={images.pc.case.src}
-          alt={images.pc.case.alt}
-          width={images.pc.case.width}
-          height={images.pc.case.height}
-          loading="lazy"
-        />
-        <img
-          className="icon pc"
-          src={images.pc.icon.src}
-          alt={images.pc.icon.alt}
-          width={images.pc.icon.width}
-          height={images.pc.icon.height}
-          loading="lazy"
-        />
+        <img className="pc" src={images.case.src} alt={images.case.alt} width={images.case.width} height={images.case.height} loading="lazy" />
+        <img className="icon pc" src={images.icon.src} alt={images.icon.alt} width={images.icon.width} height={images.icon.height} loading="lazy" />
       </div>
       <div className="detail">
         <div className="caption">{caption}</div>

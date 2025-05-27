@@ -359,4 +359,8 @@
     display: block;
     text-decoration-thickness: 8px;
   }
+  .procedure-img {
+    width: 100%;
+    height: auto;
+  }
 }

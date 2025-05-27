@@ -1,14 +1,15 @@
 import { useMediaQuery } from "@/app/hooks/useMediaQuery";
 import Link from "next/link";
 import "./navigation.css";
+import { Fragment } from "react";
 
 const menus = [
-  { text: "はじめての方の買取の流れ", url: "/" },
+  { text: "はじめての方の買取の流れ", url: "first-time-purchase" },
   {
     text: "サービス",
     child: [
-      { text: "不用品回収", url: "#" },
-      { text: "買取強化", url: "#" },
+      { text: "不用品回収", url: "disposal" },
+      { text: "買取強化", url: "purchase-strengthening" },
     ],
   },
   { text: "買取実績" },
@@ -38,7 +39,7 @@ export const Navigation = () => {
               />
             </a>
             {menus.map((el, index) => (
-              <>
+              <Fragment key={index}>
                 {el.child?.length > 0 ? (
                   <>
                     <li className={"has-child"}>{el.text}</li>
@@ -55,7 +56,7 @@ export const Navigation = () => {
                     </Link>
                   </li>
                 )}
-              </>
+              </Fragment>
             ))}
             <li className="li-contact">
               <div className="nav-buttons">

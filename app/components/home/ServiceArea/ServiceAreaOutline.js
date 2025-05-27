@@ -1,3 +1,6 @@
+import { areaLinkList } from "@/app/constants";
+import "./ServiceAreaOutline.css";
+
 export const ServiceAreaOutline = () => {
   return (
     <div className="area-outline">
@@ -10,9 +13,9 @@ export const ServiceAreaOutline = () => {
           height="55"
         />
         <div className="area-link-list">
-          {["仙台市", "青葉区", "宮城野区", "若林区", "太白区", "泉区", "名取市", "その他ご相談可能!"].map((text, index) => (
-            <a href="#" key={index} className="link-map">
-              {text}
+          {areaLinkList.map((item, index) => (
+            <a href={item.href} key={index} className="link-map">
+              {item.text}
             </a>
           ))}
         </div>
@@ -23,7 +26,7 @@ export const ServiceAreaOutline = () => {
         </p>
       </div>
       <div className="area-right">
-        <figure className="flr">
+        <figure>
           <img
             loading="lazy"
             src="https://sendai-huyohin.com/wp-content/themes/sendaihuyouhin/assets/images/top/areamap.png"

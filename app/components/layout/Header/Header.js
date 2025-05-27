@@ -16,7 +16,7 @@ export const Header = () => {
                     <img
                       src="./assets/images/Halo-eco-logo_Opt_2_slogan_FINAL-01_edit.avif"
                       width="373"
-                      height="96"
+                      height="120"
                       alt="リサイクルショップ出張買取のアシスト"
                       loading="lazy"
                     />

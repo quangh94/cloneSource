@@ -75,7 +75,7 @@ export const RecommendationChooseUs = () => {
         </strong>
       </h2>
       <figure>
-        <img loading="lazy" decoding="async" width="1424" height="1284" src="https://estatesale-rtn.com/wp-content/uploads/2024/11/図-1.png" alt="" />
+        <img className="procedure-img" decoding="async" loading="lazy" width="1424" height="1284" src="https://estatesale-rtn.com/wp-content/uploads/2024/11/図-1.png" alt="" />
       </figure>
       <div className="boxFaqSingle">
         <div className="boxFAQ clearfix">

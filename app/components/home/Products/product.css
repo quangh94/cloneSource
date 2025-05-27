@@ -19,6 +19,7 @@
 
 .item-list .item-kaden .image img {
   width: 100%;
+  height: auto;
 }
 
 .item-list .item-kaden .name {
@@ -46,6 +47,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .item-list {
+    gap: 15px;
+  }
   .item-list .item-kaden .name {
     height: fit-content;
     font-size: 0.8rem;

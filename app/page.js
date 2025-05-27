@@ -16,7 +16,6 @@ import { Review } from "./review/review";
 export default function Home() {
   return (
     <>
-      <Header />
       <main className="contents clearfix">
         <div className="first-view-wrapper">
           <Banner />
@@ -257,7 +256,7 @@ export default function Home() {
               </div>
               <div className="right-section">
                 <div className="qr-image">
-                  <img src="./assets/images/cta-top-qr.png" width="160" height="160" alt="公式LINE QR" loading="lazy" />
+                  <img src="./assets/images/cta-top-qr.webp" width="160" height="160" alt="公式LINE QR" loading="lazy" />
                 </div>
                 <div className="message">
                   <div className="message-image">

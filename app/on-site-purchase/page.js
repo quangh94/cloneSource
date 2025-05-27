@@ -1,4 +1,3 @@
-import { Header } from "../components/layout/Header/Header";
 import "./page.css";
 
 export default function OnSitePurchase() {
@@ -194,7 +193,6 @@ export default function OnSitePurchase() {
 
   return (
     <>
-      <Header />
       <div className="boxTitleMain boxTitle">
         <div className="inner">
           <h1 className="titleJp">
@@ -202,7 +200,7 @@ export default function OnSitePurchase() {
           </h1>
         </div>
       </div>
-      <div className="areas">{renderAreas()}</div>
+      <div className="container-small areas">{renderAreas()}</div>
     </>
   );
 }
